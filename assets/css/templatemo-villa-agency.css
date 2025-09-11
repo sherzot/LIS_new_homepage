@@ -171,7 +171,7 @@ body {
 }
 
 .section {
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 .section-heading {
@@ -1002,7 +1002,7 @@ Banner Style
     padding: 40px 50px;
     border-radius: 8px;
     animation: slideInFromLeft 1.5s ease-out;
-    max-width: 500px;
+    /* max-width: 500px; */
 }
 
 @keyframes slideInFromLeft {
@@ -1019,7 +1019,7 @@ Banner Style
 
 .main-banner .banner-image .header-text .catch-image {
     display: block !important;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     margin-bottom: 20px;
     opacity: 1;
@@ -1107,9 +1107,9 @@ Banner Style
 /* Extra small devices */
 @media (max-width: 480px) {
     .main-banner .banner-image .header-text {
-        left: 20px;
+        left: 15px;
         padding: 10px 15px;
-        max-width: calc(100% - 40px);
+        max-width: calc(100% - 30px);
     }
 
     .main-banner .banner-image .header-text .catch-image {
@@ -1656,7 +1656,7 @@ Video Style
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 100px 0px 250px 0px;
+    padding: 20px 0px 50px 0px;
     position: relative;
     /* Add a dark overlay for 77% opacity effect */
 }
@@ -2217,7 +2217,7 @@ Best Deal Style
 
 .best-deal {
     background-color: #fafafa;
-    padding: 100px 0px;
+    padding: 20px 0px;
 }
 
 .best-deal .tab-content img {
@@ -2972,7 +2972,7 @@ body {
     .featured .section-heading {
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     .featured .accordion {
@@ -3656,5 +3656,219 @@ body {
     
     .page-top-btn i {
         font-size: 1rem;
+    }
+}
+
+/* Company Info Responsive Styles */
+.info-table-container {
+    width: 100%;
+}
+
+.info-row {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    color: #1e1e1e;
+}
+
+/* Katta ekranlar (md va undan katta) - Flex layout */
+@media (min-width: 768px) {
+    .info-table-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .info-row {
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+    
+    .info-label {
+        width: 200px;
+        flex-shrink: 0;
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .info-value {
+        flex: 1;
+    }
+}
+
+/* Kichik ekranlar (sm va undan kichik) - Block layout */
+@media (max-width: 767px) {
+    .info-table-container {
+        display: block;
+    }
+    
+    .info-row {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .info-label {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .info-value {
+        display: block;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Styles */
+.footer-section {
+    background-color: #000000;
+    color: white;
+    padding: 60px 0 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 300px; 
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.footer-logo a:hover {
+    opacity: 0.8;
+}
+
+.footer-logo-img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+    /* display: block; */
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.footer-contact {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer-contact p {
+    /* margin: 4px 0; */
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer-right {
+    flex: 2;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 8px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #4A90E2;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-right {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+        text-align: center;
     }
 }

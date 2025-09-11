@@ -15,79 +15,6 @@
         <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-        
-        <!-- Company Info Responsive Styles -->
-        <style>
-            .info-table-container {
-                width: 100%;
-            }
-
-            .info-row {
-                border-bottom: 1px solid #eee;
-                padding: 15px 0;
-            }
-
-            .info-label {
-                font-weight: bold;
-                color: #1e1e1e;
-                margin-bottom: 5px;
-            }
-
-            .info-value {
-                color: #1e1e1e;
-            }
-
-            /* Katta ekranlar (md va undan katta) - Flex layout */
-            @media (min-width: 768px) {
-                .info-table-container {
-                    display: flex;
-                    flex-direction: column;
-                }
-                
-                .info-row {
-                    display: flex;
-                    align-items: flex-start;
-                    padding: 15px 0;
-                }
-                
-                .info-label {
-                    width: 200px;
-                    flex-shrink: 0;
-                    padding-right: 20px;
-                    margin-bottom: 0;
-                }
-                
-                .info-value {
-                    flex: 1;
-                }
-            }
-
-            /* Kichik ekranlar (sm va undan kichik) - Block layout */
-            @media (max-width: 767px) {
-                .info-table-container {
-                    display: block;
-                }
-                
-                .info-row {
-                    display: block;
-                    margin-bottom: 20px;
-                    padding: 0;
-                }
-                
-                .info-label {
-                    display: block;
-                    width: 100%;
-                    margin-bottom: 8px;
-                    font-size: 0.9rem;
-                }
-                
-                .info-value {
-                    display: block;
-                    width: 100%;
-                    font-size: 0.9rem;
-                }
-            }
-        </style>
     </head>
     <body>
         <!-- ***** Preloader Start ***** -->
@@ -123,7 +50,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="./assets/images/logo.png" alt="">
+                            <img src="./assets/images/logo.svg" alt="">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -173,7 +100,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="section-heading">
+                        <div class="section-heading" id="message">
                             <h6>| MESSAGE</h6>
                             <h2>代表メッセージ</h2>
                         </div>
@@ -205,7 +132,7 @@
                     </div>
                     <!-- MERIT Section -->
                     <div class="col-12 p-5" style="margin-top: 60px;">
-                        <div style="text-align: center; margin-bottom: 30px;">
+                        <div style="text-align: center; margin-bottom: 30px;" id="quarterly-assessment">
                             <h6 style="font-style: italic; font-size: 18px; color: #1e1e1e; margin-bottom: 10px;">MERIT
                             </h6>
                             <h3
@@ -222,7 +149,7 @@
                     </div>
 
                     <!-- 会社情報 Section -->
-                    <div class="col-12 d-flex justify-content-center">
+                    <div class="col-12 d-flex justify-content-center" id="company-info">
                       <div class="company-info-wrapper" style="max-width: 800px; width: 100%;">
                         <div style="text-align: center; margin-bottom: 30px; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 8px;">
                           <h2 class="pt-5">会社情報</h2>
@@ -301,7 +228,7 @@
                 </div>
                 
             </div>
-            <div class="video section">
+            <div class="video section" id="shigotonavi">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
@@ -312,7 +239,7 @@
                                         <img src="./assets/images/shigotonavilogo.png" alt="shigotonavi-logo" class="shigotonavi-logo">
                                     </div></h2>
                                     <div class="description-box">
-                                        <p class="main-description">2000年に求人ポータルサイト【しごとナビ】の開発に着手。<br> 現在では111万人の登録者にご利用頂いております。<br> あらゆる業界・ 職種・雇用形態に対応する全方位型求人サイトです。</p>
+                                        <p class="main-description">2000年に求人ポータルサイト【しごとナビ】の開発に着手。現在では111万人の登録者にご利用頂いております。あらゆる業界・ 職種・雇用形態に対応する全方位型<br>求人サイトです。</p>
                                     </div>
                                     <div class="features-grid">
                                         <div class="feature-item">
@@ -395,7 +322,7 @@
             
 
             <!-- 各事業所のご紹介 Section -->
-            <div class="container">
+            <div class="container" id="offices">
                 <div class="section best-deal offices-section">
                     <div class="container">
                         <div class="row">
@@ -867,7 +794,7 @@
                 </div>
             </div>
             <div class="container">
-                <section class="trainer-section row p-5">
+                <section class="trainer-section row p-5" id="trainers">
                     <div class="col-lg-6">
                         <div class="left-image">
                             <img src="assets/images/trainer2.jpg" alt="">
@@ -911,7 +838,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="leader-section row p-5">
+                <section class="leader-section row p-5" id="leaders">
                     <div class="col-lg-6">
                         <div class="left-image">
                             <img src="assets/images/leader.jpg" alt="">
@@ -958,7 +885,7 @@
             </div>
             
             <!-- VOICES Section -->
-            <div class="container">
+            <div class="container" id="voices">
                 <section class="voices-section">
                     <div class="container">
                         <div class="row">
@@ -1103,230 +1030,62 @@
                     </div>
                 </section>
             </div>
-            
-            <div class="properties section">
+
+            <footer class="footer-section">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 offset-lg-4">
-                            <div class="section-heading text-center">
-                                <h6>| Properties</h6>
-                                <h2>We Provide The Best Property You Like</h2>
+                    <div class="footer-content">
+                        <!-- Left Section - Company Info -->
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="./assets/images/logo.svg" alt="LIS Logo" class="footer-logo-img">
+                                </a>
+                            </div>
+                            <div class="footer-contact">
+                                <p>〒163-0825 東京都新宿区西新宿2丁目4番1号 新宿NSビル</p>
+                                <p>Tel. 03-5909-4120</p>
+                                <p>Fax: 03-5909-4124</p>
+                                <p>Email: lis@lis21.co.jp</p>
+                            </div>
+                        </div>
+
+                        <!-- Right Section - Navigation Links -->
+                        <div class="footer-right">
+                            <div class="footer-column">
+                                <h4>メニュー</h4>
+                                <ul>
+                                    <li><a href="index.html#message">代表メッセージ</a></li>
+                                    <li><a href="index.html#shigotonavi">しごとナビ</a></li>
+                                    <li><a href="index.html#quarterly-assessment">四半期査定について</a></li>
+                                    <li><a href="index.html#company-info">会社情報</a></li>
+                                    <li><a href="index.html#offices">各事業所のご紹介</a></li>
+                                    <li><a href="index.html#trainers">トレーナーのご紹介</a></li>
+                                    <li><a href="index.html#leaders">リーダー昇格者のご紹介</a></li>
+                                    <li><a href="index.html#voices">転職成功者の声</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-column">
+                                <h4>その他</h4>
+                                <ul>
+                                    <li><a href="lis_person_policy.html">個人情報保護方針・取り扱い</a></li>
+                                    <li><a href="lis_haken.html">派遣法に基づく公開情報</a></li>
+                                    <li><a href="Labor-regulations.html">派遣スタッフ就業規則</a></li>
+                                    <li><a href="inquiry.html">お問い合わせ</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item">
-                                <a href="property-details.html"><img src="assets/images/property-01.jpg"
-                                        alt=""></a>
-                                <span class="category">Luxury Villa</span>
-                                <h6>$2.264.000</h6>
-                                <h4><a href="property-details.html">18 New Street Miami, OR 97219</a></h4>
-                                <ul>
-                                    <li>Bedrooms: <span>8</span></li>
-                                    <li>Bathrooms: <span>8</span></li>
-                                    <li>Area: <span>545m2</span></li>
-                                    <li>Floor: <span>3</span></li>
-                                    <li>Parking: <span>6 spots</span></li>
-                                </ul>
-                                <div class="main-button">
-                                    <a href="property-details.html">Schedule a visit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item">
-                                <a href="property-details.html"><img src="assets/images/property-02.jpg"
-                                        alt=""></a>
-                                <span class="category">Luxury Villa</span>
-                                <h6>$1.180.000</h6>
-                                <h4><a href="property-details.html">54 Mid Street Florida, OR 27001</a></h4>
-                                <ul>
-                                    <li>Bedrooms: <span>6</span></li>
-                                    <li>Bathrooms: <span>5</span></li>
-                                    <li>Area: <span>450m2</span></li>
-                                    <li>Floor: <span>3</span></li>
-                                    <li>Parking: <span>8 spots</span></li>
-                                </ul>
-                                <div class="main-button">
-                                    <a href="property-details.html">Schedule a visit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item">
-                                <a href="property-details.html"><img src="assets/images/property-03.jpg"
-                                        alt=""></a>
-                                <span class="category">Luxury Villa</span>
-                                <h6>$1.460.000</h6>
-                                <h4><a href="property-details.html">26 Old Street Miami, OR 38540</a></h4>
-                                <ul>
-                                    <li>Bedrooms: <span>5</span></li>
-                                    <li>Bathrooms: <span>4</span></li>
-                                    <li>Area: <span>225m2</span></li>
-                                    <li>Floor: <span>3</span></li>
-                                    <li>Parking: <span>10 spots</span></li>
-                                </ul>
-                                <div class="main-button">
-                                    <a href="property-details.html">Schedule a visit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item">
-                                <a href="property-details.html"><img src="assets/images/property-04.jpg"
-                                        alt=""></a>
-                                <span class="category">Apartment</span>
-                                <h6>$584.500</h6>
-                                <h4><a href="property-details.html">12 New Street Miami, OR 12650</a></h4>
-                                <ul>
-                                    <li>Bedrooms: <span>4</span></li>
-                                    <li>Bathrooms: <span>3</span></li>
-                                    <li>Area: <span>125m2</span></li>
-                                    <li>Floor: <span>25th</span></li>
-                                    <li>Parking: <span>2 cars</span></li>
-                                </ul>
-                                <div class="main-button">
-                                    <a href="property-details.html">Schedule a visit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item">
-                                <a href="property-details.html"><img src="assets/images/property-05.jpg"
-                                        alt=""></a>
-                                <span class="category">Penthouse</span>
-                                <h6>$925.600</h6>
-                                <h4><a href="property-details.html">34 Beach Street Miami, OR 42680</a></h4>
-                                <ul>
-                                    <li>Bedrooms: <span>4</span></li>
-                                    <li>Bathrooms: <span>4</span></li>
-                                    <li>Area: <span>180m2</span></li>
-                                    <li>Floor: <span>38th</span></li>
-                                    <li>Parking: <span>2 cars</span></li>
-                                </ul>
-                                <div class="main-button">
-                                    <a href="property-details.html">Schedule a visit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item">
-                                <a href="property-details.html"><img src="assets/images/property-06.jpg"
-                                        alt=""></a>
-                                <span class="category">Modern Condo</span>
-                                <h6>$450.000</h6>
-                                <h4><a href="property-details.html">22 New Street Portland, OR 16540</a></h4>
-                                <ul>
-                                    <li>Bedrooms: <span>3</span></li>
-                                    <li>Bathrooms: <span>2</span></li>
-                                    <li>Area: <span>165m2</span></li>
-                                    <li>Floor: <span>26th</span></li>
-                                    <li>Parking: <span>3 cars</span></li>
-                                </ul>
-                                <div class="main-button">
-                                    <a href="property-details.html">Schedule a visit</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 offset-lg-4">
-                            <div class="section-heading text-center">
-                                <h6>| Contact Us</h6>
-                                <h2>お問い合わせ</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div id="map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.7365975490407!2d139.6908753764745!3d35.68808877258504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd377187c1f%3A0xa053f78db32650a3!2z44Oq44K55qCq5byP5Lya56S-IOadseS6rOacrOekvg!5e1!3m2!1suz!2sjp!4v1757405264289!5m2!1suz!2sjp"
-                                    width="100%" height="500px" frameborder="0"
-                                    style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);"
-                                    allowfullscreen=""></iframe>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="item phone">
-                                        <img src="assets/images/phone-icon.png" alt=""
-                                            style="max-width: 52px;">
-                                        <h6>010-020-0340<br><span>Phone Number</span></h6>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="item email">
-                                        <img src="assets/images/email-icon.png" alt=""
-                                            style="max-width: 52px;">
-                                        <h6>info@villa.co<br><span>Business Email</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <form id="contact-form" action="" method="post">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <label for="name">Full Name</label>
-                                            <input type="name" name="name" id="name"
-                                                placeholder="Your Name..." autocomplete="on" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <label for="email">Email Address</label>
-                                            <input type="text" name="email" id="email"
-                                                pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <label for="subject">Subject</label>
-                                            <input type="subject" name="subject" id="subject"
-                                                placeholder="Subject..." autocomplete="on">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <label for="message">Message</label>
-                                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="orange-button">Send
-                                                Message</button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <footer>
-                <div class="container">
-                    <div class="col-lg-8">
-                        <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved.
-
-                            Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                        </p>
+                    
+                    <div class="footer-bottom">
+                        <p>Copyright © LIS co.,ltd. ALL rights Reserved.</p>
                     </div>
                 </div>
             </footer>
+
+            <!-- Page Top Button -->
+            <a href="#" class="page-top-btn" id="page-top-btn">
+                <i class="fas fa-arrow-up"></i>
+            </a>
 
             <!-- Scripts -->
             <!-- Bootstrap core JavaScript -->
