@@ -15,6 +15,79 @@
         <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        
+        <!-- Company Info Responsive Styles -->
+        <style>
+            .info-table-container {
+                width: 100%;
+            }
+
+            .info-row {
+                border-bottom: 1px solid #eee;
+                padding: 15px 0;
+            }
+
+            .info-label {
+                font-weight: bold;
+                color: #1e1e1e;
+                margin-bottom: 5px;
+            }
+
+            .info-value {
+                color: #1e1e1e;
+            }
+
+            /* Katta ekranlar (md va undan katta) - Flex layout */
+            @media (min-width: 768px) {
+                .info-table-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .info-row {
+                    display: flex;
+                    align-items: flex-start;
+                    padding: 15px 0;
+                }
+                
+                .info-label {
+                    width: 200px;
+                    flex-shrink: 0;
+                    padding-right: 20px;
+                    margin-bottom: 0;
+                }
+                
+                .info-value {
+                    flex: 1;
+                }
+            }
+
+            /* Kichik ekranlar (sm va undan kichik) - Block layout */
+            @media (max-width: 767px) {
+                .info-table-container {
+                    display: block;
+                }
+                
+                .info-row {
+                    display: block;
+                    margin-bottom: 20px;
+                    padding: 0;
+                }
+                
+                .info-label {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 8px;
+                    font-size: 0.9rem;
+                }
+                
+                .info-value {
+                    display: block;
+                    width: 100%;
+                    font-size: 0.9rem;
+                }
+            }
+        </style>
     </head>
     <body>
         <!-- ***** Preloader Start ***** -->
@@ -155,15 +228,15 @@
                           <h2 class="pt-5">会社情報</h2>
                         </div>
                         <div class="company-info-card">
-                            <div class="info-table-container" style="display: table !important; width: 100% !important; border-collapse: collapse !important;">
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">商号</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">リス株式会社</div>
+                            <div class="info-table-container">
+                                <div class="info-row">
+                                    <div class="info-label">商号</div>
+                                    <div class="info-value">リス株式会社</div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">人材サービス項目</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">
+                                <div class="info-row">
+                                    <div class="info-label">人材サービス項目</div>
+                                    <div class="info-value">
                                         <div>■ 人材派遣</div>
                                         <div>■ 紹介予定派遣</div>
                                         <div>■ 職業紹介</div>
@@ -171,40 +244,40 @@
                                     </div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">代表取締役社長</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">木村亮郎</div>
+                                <div class="info-row">
+                                    <div class="info-label">代表取締役社長</div>
+                                    <div class="info-value">木村亮郎</div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">設立</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">昭和55年4月。愛媛県松山市にて会社設立</div>
+                                <div class="info-row">
+                                    <div class="info-label">設立</div>
+                                    <div class="info-value">昭和55年4月。愛媛県松山市にて会社設立</div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">所在地</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">
+                                <div class="info-row">
+                                    <div class="info-label">所在地</div>
+                                    <div class="info-value">
                                         <div>〒163-0825</div>
                                         <div>東京都新宿区西新宿2丁目4番1号 新宿NSビル</div>
                                     </div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">電話番号</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">
+                                <div class="info-row">
+                                    <div class="info-label">電話番号</div>
+                                    <div class="info-value">
                                         <div>Tel: 03-5909-4120</div>
                                         <div>Fax: 03-5909-4124</div>
                                     </div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">資本金</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">50,000,000円</div>
+                                <div class="info-row">
+                                    <div class="info-label">資本金</div>
+                                    <div class="info-value">50,000,000円</div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">許認可資格</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">
+                                <div class="info-row">
+                                    <div class="info-label">許認可資格</div>
+                                    <div class="info-value">
                                         <div>■ 人材派遣許可 派13-080040</div>
                                         <div>■ 入管申請取次承認番号(東)企19-第152号</div>
                                         <div>■ プライバシーマーク認定 10860005(13)</div>
@@ -212,9 +285,9 @@
                                     </div>
                                 </div>
 
-                                <div class="info-row" style="display: table-row !important;">
-                                    <div class="info-label" style="display: table-cell !important; width: 200px !important; font-weight: bold !important; color: #1e1e1e !important; padding: 15px 20px 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">所属団体</div>
-                                    <div class="info-value" style="display: table-cell !important; color: #1e1e1e !important; padding: 15px 0 !important; vertical-align: top !important; border-bottom: 1px solid #eee !important;">
+                                <div class="info-row">
+                                    <div class="info-label">所属団体</div>
+                                    <div class="info-value">
                                         <div>■ 日本人材派遣協会会員</div>
                                         <div>■ 日本人材紹介事業協会会員</div>
                                         <div>■ 暴力団追放運動推進都民センター賛助会員</div>
@@ -256,8 +329,8 @@
                                                 <i class="fas fa-building"></i>
                                             </div>
                                             <div class="feature-content">
-                                                <h4>全方位型</h4>
-                                                <p>求人サイト</p>
+                                                <h4>47都道府県</h4>
+                                                <p>求人多数</p>
                                             </div>
                                         </div>
                                         <div class="feature-item">
