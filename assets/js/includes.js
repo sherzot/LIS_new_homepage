@@ -11,12 +11,16 @@ function includeHTML() {
                 if (this.readyState == 4) {
                     if (this.status == 200) {
                         elmnt.innerHTML = this.responseText;
+                        elmnt.removeAttribute("include-html");
+                        // Re-initialize hamburger menu after include
+                        if (typeof window.initHamburgerMenu === 'function') {
+                            window.initHamburgerMenu();
+                        }
+                        includeHTML();
                     }
                     if (this.status == 404) {
                         elmnt.innerHTML = "Page not found.";
                     }
-                    elmnt.removeAttribute("include-html");
-                    includeHTML();
                 }
             }
             xhttp.open("GET", file, true);

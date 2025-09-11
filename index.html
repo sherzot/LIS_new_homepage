@@ -15,67 +15,11 @@
         <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <link rel="icon" href="./assets/images/icon.svg">
     </head>
     <body>
-        <!-- ***** Preloader Start ***** -->
-        <div id="js-preloader" class="js-preloader">
-            <div class="preloader-inner">
-                <span class="dot"></span>
-                <div class="dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Preloader End ***** -->
-        <div class="sub-header">
-            <div class="row">
-                <div class="col-lg-8 col-md-8">
-                    <ul class="info">
-                        <li><i class="fa fa-envelope"></i> lis@lis21.co.jp</li>
-                        <li><i class="fa fa-location-dot"></i>〒163-0825 東京都新宿区西新宿２丁目４番１号 新宿ＮＳビル２５階</li>
-                    </ul>
-                </div>
-        <div class="col-lg-4 col-md-4">
-            <!-- SNS links removed -->
-        </div>
-            </div>
-        </div>
-
         <!-- ***** Header Area Start ***** -->
-        <header class="header-area header-sticky">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="./assets/images/logo.svg" alt="">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.html" class="active">代表メッセージ</a></li>
-                            <li><a href="properties.html">四半期査定について</a></li>
-                            <li><a href="property-details.html">しごとナビ</a></li>
-                            <li><a href="contact.html">会社情報</a></li>
-                            <li><a href="#">各事業所のご紹介</a></li>
-                            <li><a href="#">トレーナーのご紹介</a></li>
-                            <li><a href="#">リーダー昇格者のご紹介</a></li>
-                            <li><a href="#">転職成功者の声</a></li>
-                            <li><a href="#">個人情報保護方針・取り扱い</a></li>
-                            <li><a href="#">派遣法に基づく公開情報</a></li>
-                            <li><a href="#">派遣スタッフ就業規則</a></li>
-                            <li><a href="#">お問い合わせ</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <div include-html="includes/header.html"></div>
         <!-- ***** Header Area End ***** -->
 
         <div class="main-banner">
@@ -1031,62 +975,11 @@
                 </section>
             </div>
 
-            <footer class="footer-section">
-                <div class="container">
-                    <div class="footer-content">
-                        <!-- Left Section - Company Info -->
-                        <div class="footer-left">
-                            <div class="footer-logo">
-                                <a href="index.html">
-                                    <img src="./assets/images/logo.svg" alt="LIS Logo" class="footer-logo-img">
-                                </a>
-                            </div>
-                            <div class="footer-contact">
-                                <p>〒163-0825 東京都新宿区西新宿2丁目4番1号 新宿NSビル</p>
-                                <p>Tel. 03-5909-4120</p>
-                                <p>Fax: 03-5909-4124</p>
-                                <p>Email: lis@lis21.co.jp</p>
-                            </div>
-                        </div>
-
-                        <!-- Right Section - Navigation Links -->
-                        <div class="footer-right">
-                            <div class="footer-column">
-                                <h4>メニュー</h4>
-                                <ul>
-                                    <li><a href="index.html#message">代表メッセージ</a></li>
-                                    <li><a href="index.html#shigotonavi">しごとナビ</a></li>
-                                    <li><a href="index.html#quarterly-assessment">四半期査定について</a></li>
-                                    <li><a href="index.html#company-info">会社情報</a></li>
-                                    <li><a href="index.html#offices">各事業所のご紹介</a></li>
-                                    <li><a href="index.html#trainers">トレーナーのご紹介</a></li>
-                                    <li><a href="index.html#leaders">リーダー昇格者のご紹介</a></li>
-                                    <li><a href="index.html#voices">転職成功者の声</a></li>
-                                </ul>
-                            </div>
-                            <div class="footer-column">
-                                <h4>その他</h4>
-                                <ul>
-                                    <li><a href="lis_person_policy.html">個人情報保護方針・取り扱い</a></li>
-                                    <li><a href="lis_haken.html">派遣法に基づく公開情報</a></li>
-                                    <li><a href="Labor-regulations.html">派遣スタッフ就業規則</a></li>
-                                    <li><a href="inquiry.html">お問い合わせ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="footer-bottom">
-                        <p>Copyright © LIS co.,ltd. ALL rights Reserved.</p>
-                    </div>
-                </div>
-            </footer>
-
-            <!-- Page Top Button -->
-            <a href="#" class="page-top-btn" id="page-top-btn">
-                <i class="fas fa-arrow-up"></i>
-            </a>
-
+            <!-- Include functionality - must be loaded first -->
+            <script src="assets/js/includes.js"></script>
+            
+            <div include-html="includes/footer.html"></div>
+            
             <!-- Scripts -->
             <!-- Bootstrap core JavaScript -->
             <script src="vendor/jquery/jquery.min.js"></script>
@@ -1095,7 +988,6 @@
             <script src="assets/js/counter.js"></script>
             <script src="assets/js/custom.js"></script>
             <script src="assets/js/page-top.js"></script>
-
     </body>
 
 </html>

@@ -2,12 +2,6 @@
 	
 	"use strict";
 
-	// Page loading animation
-	$(window).on('load', function() {
-
-        $('#js-preloader').addClass('loaded');
-
-    });
 
 
 	$(window).scroll(function() {
@@ -59,18 +53,23 @@
 
 
 	// Menu Dropdown Toggle
-	console.log('Custom.js loaded, checking for menu-trigger...');
-	if($('.menu-trigger').length){
-		console.log('Menu trigger found, adding click handler');
-		$(".menu-trigger").on('click', function(e) {	
+	$(document).ready(function() {
+		$('.menu-trigger').on('click', function(e) {	
 			e.preventDefault();
 			e.stopPropagation();
-			console.log('Hamburger menu clicked');
 			$(this).toggleClass('active');
 			$('.header-area .nav').toggleClass('show');
 		});
-	} else {
-		console.log('Menu trigger not found!');
+	});
+	
+	// Re-initialize when content is loaded via includes
+	window.initHamburgerMenu = function() {
+		$('.menu-trigger').off('click').on('click', function(e) {	
+			e.preventDefault();
+			e.stopPropagation();
+			$(this).toggleClass('active');
+			$('.header-area .nav').toggleClass('show');
+		});
 	}
 
 
@@ -94,7 +93,7 @@
 	});
 
 
-	// Page loading animation
+	// Parallax animation
 	$(window).on('load', function() {
 		if($('.cover').length){
 			$('.cover').parallax({
@@ -102,14 +101,6 @@
 				zIndex: '1'
 			});
 		}
-
-		$("#preloader").animate({
-			'opacity': '0'
-		}, 600, function(){
-			setTimeout(function(){
-				$("#preloader").css("visibility", "hidden").fadeOut();
-			}, 300);
-		});
 	});
     
 
