@@ -3872,3 +3872,327 @@ body {
         text-align: center;
     }
 }
+
+/* Privacy Policy Accordion Styles */
+.privacy-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.privacy-section .main-image img {
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.privacy-section .alert {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.accordion {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: #fff !important;
+    border: none;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.accordion-button i {
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.accordion-button .accordion-icon {
+    transition: transform 0.3s ease;
+    font-size: 14px;
+}
+
+.accordion-button:not(.collapsed) .accordion-icon {
+    transform: rotate(90deg);
+}
+
+.accordion-button .badge {
+    font-size: 0.75em;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-shadow: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.accordion-button .badge.bg-light {
+    background-color: rgba(255,255,255,0.9) !important;
+    color: #333 !important;
+}
+
+.accordion-button .badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+.accordion-button .badge.bg-info {
+    background-color: #17a2b8 !important;
+    color: #fff !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    box-shadow: 0 5px 15px rgba(40,167,69,0.3);
+    transform: translateY(-2px);
+}
+
+.accordion-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,123,255,0.4);
+}
+
+.accordion-button:not(.collapsed):hover {
+    box-shadow: 0 8px 25px rgba(40,167,69,0.4);
+}
+
+.accordion-button:active {
+    transform: translateY(-1px);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0,123,255,0.25);
+}
+
+/* Accordion Button Animation Effects */
+.accordion-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.accordion-button:hover::before {
+    left: 100%;
+}
+
+/* Accordion Status Indicators */
+.accordion-button .status-indicator {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .status-indicator {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+/* Accordion Button Text Effects */
+.accordion-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion-button .btn-text {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Mobile Responsive for Accordion Buttons */
+@media (max-width: 768px) {
+    .accordion-button {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .accordion-button .badge {
+        font-size: 0.7em;
+        padding: 3px 6px;
+    }
+    
+    .accordion-button .accordion-icon {
+        font-size: 12px;
+    }
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    background: #fff;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.policy-item, .term-item, .privacy-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.policy-item:hover, .term-item:hover, .privacy-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.policy-item h5, .term-item h5, .privacy-item h5 {
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.signature-section {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 10px;
+    border: 2px solid #2196f3;
+}
+
+.jipdec-info {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    border-radius: 10px;
+    border: 2px solid #4caf50;
+}
+
+.revision-section {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-radius: 10px;
+    border: 2px solid #ff9800;
+}
+
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.table thead th {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+}
+
+.badge {
+    font-size: 0.8em;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.prohibited-items ol {
+    counter-reset: item;
+}
+
+.prohibited-items ol li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff5f5;
+    border-radius: 5px;
+    border-left: 3px solid #dc3545;
+}
+
+.prohibited-items ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.security-measures .measure-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #28a745;
+}
+
+.security-measures .measure-item h6 {
+    color: #28a745;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.list-unstyled li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .accordion-button {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .accordion-body {
+        padding: 20px;
+    }
+    
+    .policy-item, .term-item, .privacy-item {
+        padding: 15px;
+    }
+    
+    .table-responsive {
+        font-size: 0.9em;
+    }
+}
