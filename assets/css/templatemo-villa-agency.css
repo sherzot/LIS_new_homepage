@@ -3634,6 +3634,9 @@ body {
 
 /* Responsive page top button */
 @media (max-width: 768px) {
+    .page-heading h3 {
+        font-size: 28px;
+    }
     .page-top-btn {
         bottom: 20px;
         right: 20px;
