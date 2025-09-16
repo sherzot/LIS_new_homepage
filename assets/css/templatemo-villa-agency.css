@@ -3525,8 +3525,8 @@ body {
     align-items: center;
     margin-bottom: 15px;
     padding: 8px 0;
-    font-size: 1rem;
-    color: #333;
+    font-size: 0.85rem !important;
+    color: #6c757d !important;
 }
 
 .info-table ul li span {
@@ -3543,8 +3543,9 @@ body {
     }
     
     .info-table ul li {
-        font-size: 0.9rem;
+        font-size: 0.8rem !important;
         margin-bottom: 12px;
+        color: #6c757d !important;
     }
     
     .sub-header .info li i {
@@ -3569,8 +3570,9 @@ body {
     }
     
     .info-table ul li {
-        font-size: 0.85rem;
+        font-size: 0.75rem !important;
         margin-bottom: 10px;
+        color: #6c757d !important;
     }
     
     .sub-header .info li i {
@@ -4197,5 +4199,82 @@ body {
     
     .table-responsive {
         font-size: 0.9em;
+    }
+}
+
+/* Address text styling for long addresses in info-table */
+.info-table ul li.address-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.info-table ul li.address-item i {
+    margin-right: 10px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    color: #667eea;
+}
+
+.info-table ul li.address-item .address-text {
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.4;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Apply same font-size to all li elements in info-table */
+.info-table ul li {
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+    color: #6c757d !important;
+}
+
+.info-table ul li i {
+    margin-right: 8px !important;
+    width: 16px !important;
+    text-align: center !important;
+}
+
+.info-table ul li span {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    display: inline-block !important;
+}
+
+/* Responsive adjustments for address text */
+@media (max-width: 768px) {
+    .info-table ul li {
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 6px !important;
+        color: #6c757d !important;
+    }
+    
+    .info-table ul li.address-item .address-text {
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .info-table ul li.address-item {
+        margin-bottom: 8px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-table ul li {
+        font-size: 0.75rem !important;
+        margin-bottom: 5px !important;
+        color: #6c757d !important;
+    }
+    
+    .info-table ul li.address-item .address-text {
+        font-size: 0.75rem !important;
+    }
+    
+    .info-table ul li.address-item {
+        margin-bottom: 6px !important;
     }
 }
